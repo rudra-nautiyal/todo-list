@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List Application</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="board">
+      <div class="js-todo-column column">
+        <h1>To Do</h1>
+        <div class="task-container-todo"></div>
+        <input placeholder="Task" class="js-input-todo textbox" type="text" />
+        <textarea
+          placeholder="Description"
+          class="js-description-todo js-description"
+        ></textarea>
+        <button class="button" onclick="addTodo('todo')">Add New</button>
+      </div>
+      <div class="js-inprogress-column column">
+        <h1>In Progress</h1>
+        <div class="task-container-inprogress"></div>
+      </div>
+      <div class="js-review-column column">
+        <h1>Under Review</h1>
+        <div class="task-container-review"></div>
+      </div>
+      <div class="js-done-column column">
+        <h1>Finished</h1>
+        <div class="task-container-done"></div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
