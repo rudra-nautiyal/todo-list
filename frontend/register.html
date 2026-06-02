@@ -18,18 +18,22 @@
 
       <p class="subtitle">Create your account.</p>
 
-      <input type="text" placeholder="Username" class="textbox" />
+      <input type="text" placeholder="Username" class="js-username textbox" />
 
-      <input type="email" placeholder="Email" class="textbox" />
+      <input
+        type="password"
+        placeholder="Password"
+        class="js-password textbox"
+      />
 
-      <input type="password" placeholder="Password" class="textbox" />
-
-      <button>Register</button>
+      <button class="js-register-button">Register</button>
 
       <div class="auth-footer">
         Already have an account?
         <a href="./login.html">Login</a>
       </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./js/register.js"></script>
   </body>
 </html>

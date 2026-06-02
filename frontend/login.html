@@ -18,16 +18,22 @@
 
       <p class="subtitle">Welcome back. Sign in to continue.</p>
 
-      <input type="email" placeholder="Email" class="textbox" />
+      <input type="text" placeholder="Username" class="js-username textbox" />
 
-      <input type="password" placeholder="Password" class="textbox" />
+      <input
+        type="password"
+        placeholder="Password"
+        class="js-password textbox"
+      />
 
-      <button>Login</button>
+      <button class="js-login-button">Login</button>
 
       <div class="auth-footer">
         Don't have an account?
         <a href="./register.html">Register</a>
       </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./js/login.js"></script>
   </body>
 </html>

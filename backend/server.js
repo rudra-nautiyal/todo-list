@@ -1,6 +1,7 @@
 const express = require("express");
 const dotenv = require("dotenv");
 const jwt = require("jsonwebtoken");
+const cors = require("cors");
 
 dotenv.config();
 
@@ -8,6 +9,7 @@ const app = express();
 const users = [];
 
 app.use(express.json());
+app.use(cors());
 
 app.post("/register", (req, res) => {
   const username = req.body.username;
